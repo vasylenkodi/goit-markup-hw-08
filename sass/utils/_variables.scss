@@ -1,0 +1,266 @@
+$colors: (
+    'primary-text-color': #757575,
+    'secondary-text-color': #212121,
+    'accent-color': #2196F3,
+    'logo-primary-color': #000000,
+    'adress-contacts-color': rgba(255, 255, 255, 0.6),
+    'footer-primary-color': #ffffff,
+    'label-color': #757575,
+    'primary-bg-color': #FFFFFF,
+    'secondary-bg-color': #2F303A,
+    'tertiary-bg-color': #F5F4FA,
+    'active-button-color': #188CE8,
+    'active-secondary-button-text-color': #FFFFFF,
+    'features-card-text-color': #ffffff,
+    'close-icon-color': #000000,
+    'icons-color': #AFB1B8,
+    'icons-hover-color': #ffffff,
+    'primary-shadow-color': rgba(0, 0, 0, 0.15),
+    'secondary-shadow-color': rgba(0, 0, 0, 0.1),
+    'tertiary-shadow-color': rgba(0, 0, 0, 0.12),
+    'primary-team-card-shadow-color': rgba(0, 0, 0, 0.12),
+    'secondary-team-card-shadow-color': rgba(0, 0, 0, 0.14),
+    'tertiary-team-card-shadow-color': rgba(0, 0, 0, 0.2),
+    'back-drop-color': rgba(0, 0, 0, 0.2),
+    'header-border-color': #ECECEC,
+    'primary-border-color': #EEEEEE,
+    'hero-bg-gradient-start-color': rgba(47, 48, 58, 0.4),
+    'hero-bg-gradient-end-color': rgba(47, 48, 58, 0.4),
+    'input-border-color': rgba(33, 33, 33, 0.2),
+    'modal-placeholder-color': rgba(117, 117, 117, 0.5),
+    'footer-social-medias-bg': rgba(255, 255, 255, 0.1),
+    'send-out-input-border-color': rgba(255, 255, 255, 0.3),
+    'portfolio-card-secondary-shadow-color': rgba(0, 0, 0, 0.06),
+    'portfolio-card-tertiary-shadow-color': rgba(0, 0, 0, 0.16),
+    'gallery-overlay-bg-color': rgba(33, 150, 243, 0.9),
+);
+
+@function getColor ($key) {
+    @return map-get($colors, $key);
+}
+
+%primaryTextFont {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary-text-color');
+}
+
+%primaryTitleFont {
+    font-family: 'Roboto';
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('secondary-text-color');
+}
+
+%secondaryTitleFont {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: getColor('secondary-text-color');
+}
+
+%tertiaryTitleFont {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: getColor('footer-primary-color');
+}
+
+%navigationLinksFont {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: getColor('secondary-text-color');
+}
+
+%page-headerLogoFont {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: getColor('logo-primary-color');
+}
+
+%page-footerLogoFont {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: getColor('footer-primary-color');
+}
+
+%contactsFont {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: getColor('primary-text-color');
+}
+
+%heroFont {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: getColor('primary-bg-color');
+}
+
+%primaryButtonsFont {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: getColor('footer-primary-color');
+}
+
+%secondaryButtonsFont {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('secondary-text-color');
+}
+
+%teamMemberNameFont {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('secondary-text-color');
+}
+
+%teamMemberPositionFont {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary-text-color');
+}
+
+%adressFont {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: getColor('footer-primary-color');
+}
+
+%page-footerContactsFont {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: getColor('adress-contacts-color');
+}
+
+%page-footerInputPlaceholderFont {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: getColor('adress-contacts-color');
+}
+
+%modalTitleFont {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('secondary-text-color');
+}
+
+%modalLabelFont {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: getColor('primary-text-color');
+}
+
+%modalInputFont {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: getColor('secondary-text-color');
+}
+
+%modalCommentPlaceholderFont {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: getColor('modal-placeholder-color');   
+}
+
+%portfolioCardTitleFont {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: getColor('secondary-text-color');
+}
+
+%portfolioCardOverlayFont {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary-bg-color');
+}
+
+%portfolioCardTextFont {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary-text-color');
+}
