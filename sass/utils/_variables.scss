@@ -173,12 +173,18 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
 %heroFont {
     font-family: 'Roboto';
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
     color: getColor('primary-bg-color');
+    
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;  
+    }
 }
 
 %primaryButtonsFont {

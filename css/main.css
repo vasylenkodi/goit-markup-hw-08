@@ -328,6 +328,23 @@ summary {
   }
 }
 
+.hero__title {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .nav-menu__social-media {
   font-family: "Roboto";
   font-weight: 500;
@@ -337,11 +354,11 @@ summary {
   color: #2196F3;
 }
 
-.nav-menu__social-media, .page-header-contacts__link, .site-navigation__link, .page-footer__logo, .logo {
+.page-header-contacts__link, .site-navigation__link, .nav-menu__social-media, .page-footer__logo, .logo {
   text-decoration: none;
 }
 
-.nav-menu__social-media-list, .page-header-contacts, .site-navigation__list {
+.page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -357,6 +374,11 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .visually-hidden {
@@ -423,55 +445,20 @@ summary {
   color: #2196F3;
 }
 
-@media screen and (max-width: 768px) {
-  .site-navigation__item:not(:first-child) {
-    margin-top: 32px;
-  }
-}
-
-.site-navigation__link {
+.nav-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-navigation__link:hover, .site-navigation__link:focus {
+.nav-menu__button:hover, .nav-menu__button:focus {
   color: #2196F3;
-}
-
-.page-header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: auto;
-}
-@media screen and (max-width: 1200px) {
-  .page-header-contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .page-header-contacts__item:not(:first-child) {
-    margin-bottom: 32px;
-  }
-}
-
-.page-header-contacts__link {
-  color: inherit;
-}
-
-@media screen and (max-width: 768px) {
-  .page-header-contacts__icon-mail {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .page-header-contacts__icon-phone {
-    display: none;
-  }
 }
 
 .page-header__container {
@@ -538,20 +525,60 @@ summary {
   fill: currentColor;
 }
 
-.nav-menu__button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: transparent;
-  color: #212121;
+@media screen and (max-width: 768px) {
+  .site-navigation__item:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+
+.site-navigation__link {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-menu__button:hover, .nav-menu__button:focus {
+.site-navigation__link:hover, .site-navigation__link:focus {
   color: #2196F3;
+}
+
+.page-header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+@media screen and (max-width: 1200px) {
+  .page-header-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header-contacts__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.page-header-contacts__link {
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header-contacts__icon-mail {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header-contacts__icon-phone {
+    display: none;
+  }
+}
+
+.hero {
+  background-color: #2F303A;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

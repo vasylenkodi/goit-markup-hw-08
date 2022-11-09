@@ -1,0 +1,10 @@
+.hero {
+    background-color: getColor('secondary-bg-color');
+    // background-image: url('../../../images/hero-background-image.jpg'), linear-gradient(getColor('hero-bg-gradient-start-color'), getColor('hero-bg-gradient-end-color'));
+    @extend %backgroundImagePositioning;
+    text-align: center;
+}
+
+.hero__title {
+    @extend %heroFont;
+}
