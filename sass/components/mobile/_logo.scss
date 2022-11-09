@@ -1,0 +1,17 @@
+.logo {
+    @extend %link;
+    @extend %page-headerLogoFont;
+
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logo--accent {
+    color: getColor('accent-color');
+}
+
+.page-footer__logo {
+    @extend %link;
+    @extend %page-footerLogoFont;
+}

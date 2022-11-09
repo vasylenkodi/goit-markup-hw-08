@@ -1,0 +1,20 @@
+.site-navigation__list {
+    @extend %list;
+}
+
+.site-navigation__item:not(:first-child) {
+    @media screen and (max-width: $tablet) {
+        margin-top: 32px;
+    }
+}
+
+.site-navigation__link {
+    @extend %link;
+    @extend %navigationLinksFont;
+
+    transition: color 250ms $timingFunction;
+    
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+}

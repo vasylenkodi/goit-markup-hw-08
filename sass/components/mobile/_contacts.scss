@@ -1,0 +1,37 @@
+.page-header-contacts {
+    @extend %list;
+    display: flex;
+    margin-top: auto;
+    @media screen and (max-width: $desktop) {
+        flex-direction: column-reverse;
+    }
+}
+
+.page-header-contacts__item {
+    @extend %contactsFont;
+}
+
+.page-header-contacts__item:not(:first-child) {
+    @extend %phoneNumberFont;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 32px;
+    }
+}
+
+.page-header-contacts__link {
+    @extend %link;
+    color: inherit;
+}
+
+.page-header-contacts__icon-mail {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.page-header-contacts__icon-phone {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}

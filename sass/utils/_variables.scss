@@ -33,11 +33,19 @@ $colors: (
     'portfolio-card-secondary-shadow-color': rgba(0, 0, 0, 0.06),
     'portfolio-card-tertiary-shadow-color': rgba(0, 0, 0, 0.16),
     'gallery-overlay-bg-color': rgba(33, 150, 243, 0.9),
+    'nav-menu-after-element-color': rgba(33, 33, 33, 0.2),
 );
 
 @function getColor ($key) {
     @return map-get($colors, $key);
 }
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+
 
 %primaryTextFont {
     font-family: 'Roboto';
@@ -81,43 +89,85 @@ $colors: (
 }
 
 %navigationLinksFont {
+
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
 
     color: getColor('secondary-text-color');
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    
 }
 
 %page-headerLogoFont {
+
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-
+    
     color: getColor('logo-primary-color');
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 %page-footerLogoFont {
+
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 
     color: getColor('footer-primary-color');
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+%phoneNumberFont {
+    @media screen and (max-width: $tablet) {
+        font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: getColor('accent-color');
+    }
 }
 
 %contactsFont {
+
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
     color: getColor('primary-text-color');
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 %heroFont {
@@ -150,6 +200,16 @@ $colors: (
     letter-spacing: 0.03em;
 
     color: getColor('secondary-text-color');
+}
+
+%navigationSocialMediaFont {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: getColor('accent-color');
 }
 
 %teamMemberNameFont {
