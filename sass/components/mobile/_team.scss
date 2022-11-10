@@ -4,6 +4,8 @@
 
 .team__title {
     @extend %primaryTitleFont;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .team-list {
