@@ -1,0 +1,14 @@
+.hero {
+
+}
+
+.hero__title {
+
+}
+
+.container--hero {
+    @media screen and (min-width: $tablet) {
+        padding-right: 189px;
+        padding-left: 189px;
+    }
+}

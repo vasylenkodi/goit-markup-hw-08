@@ -1220,4 +1220,11 @@ summary {
   fill: currentColor;
   vertical-align: bottom;
   margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container--hero {
+    padding-right: 189px;
+    padding-left: 189px;
+  }
 }/*# sourceMappingURL=main.css.map */
