@@ -14,4 +14,6 @@
 .page-footer__logo {
     @extend %link;
     @extend %page-footerLogoFont;
+    display: inline-block;
+    margin-bottom: 20px;
 }

@@ -1,0 +1,38 @@
+.social-medias-subscribe {
+  margin-bottom: 60px;
+}
+
+.social-medias-subscribe__title {
+  @extend %tertiaryTitleFont;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page-footer__social-medias-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
+
+.page-footer__social-medias-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.page-footer__social-medias-link {
+    @extend %centeredFlex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: getColor('footer-social-medias-bg');
+    color: getColor('footer-primary-color');
+
+    transition: background-color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        background-color: getColor('accent-color');
+    }
+}
+
+.page-footer__social-medias-icon {
+    fill: currentColor;
+}
