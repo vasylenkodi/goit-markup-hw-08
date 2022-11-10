@@ -3,6 +3,8 @@
     // background-image: url('../../../images/hero-background-image.jpg'), linear-gradient(getColor('hero-bg-gradient-start-color'), getColor('hero-bg-gradient-end-color'));
     @extend %backgroundImagePositioning;
     text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
 }
 
 .hero__title {
