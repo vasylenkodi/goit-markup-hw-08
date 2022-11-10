@@ -1,0 +1,36 @@
+.features-list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.features-card {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px)/2);
+    }
+}
+
+.features-card:nth-child(-n + 2) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+
+.features-card:nth-child(2n + 1) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 30px;
+    }
+}
+
+.features-card__thumb {
+    
+}
+
+.features-card__title {
+
+} 
+
+.features-card__text {
+
+}

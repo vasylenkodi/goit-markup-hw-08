@@ -794,8 +794,10 @@ summary {
   margin-bottom: 30px;
 }
 
-.features-card:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .features-card__thumb {
@@ -1226,5 +1228,33 @@ summary {
   .container--hero {
     padding-right: 189px;
     padding-left: 189px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-card:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-card:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }/*# sourceMappingURL=main.css.map */
