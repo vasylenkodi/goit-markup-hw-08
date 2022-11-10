@@ -1,0 +1,22 @@
+.features-list {
+    @extend %list;
+}
+
+.features-card:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.features-card__thumb {
+    @extend %centeredFlex;
+    width: 100%;
+    height: 120px;
+    background-color: getColor('tertiary-bg-color');
+}
+
+.features-card__title {
+    @extend %secondaryTitleFont;
+}
+
+.features-card__text {
+    @extend %primaryTextFont;
+}

@@ -67,6 +67,10 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 %secondaryTitleFont {
+    @media screen and (max-width: $tablet) {
+        text-align: center;
+    }
+
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;

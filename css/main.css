@@ -252,6 +252,29 @@ summary {
   display: list-item;
 }
 
+.features-card__text {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.features-card__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+@media screen and (max-width: 768px) {
+  .features-card__title {
+    text-align: center;
+  }
+}
+
 .site-navigation__link {
   font-family: "Roboto";
   font-weight: 500;
@@ -377,13 +400,13 @@ summary {
   text-decoration: none;
 }
 
-.page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
+.features-list, .page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.form-send-out__button--primary, .nav-menu__button {
+.features-card__thumb, .form-send-out__button--primary, .nav-menu__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,6 +659,16 @@ summary {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+.features-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.features-card__thumb {
+  width: 100%;
+  height: 120px;
+  background-color: #F5F4FA;
 }
 
 @media screen and (max-width: 1200px) {
