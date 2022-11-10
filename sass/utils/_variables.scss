@@ -58,12 +58,17 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
 
 %primaryTitleFont {
     font-family: 'Roboto';
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: getColor('secondary-text-color');
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 1.17;
+    }   
 }
 
 %secondaryTitleFont {

@@ -1,0 +1,11 @@
+.team {
+    background-color: getColor('tertiary-bg-color');
+}
+
+.team__title {
+    @extend %primaryTitleFont;
+}
+
+.team-list {
+    @extend %list;
+}
