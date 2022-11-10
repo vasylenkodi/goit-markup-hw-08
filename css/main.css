@@ -411,17 +411,36 @@ summary {
   color: #2196F3;
 }
 
+.team-card__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-card__position {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .page-header-contacts__link, .site-navigation__link, .nav-menu__social-media, .page-footer__logo, .logo {
   text-decoration: none;
 }
 
-.team-list, .features-list, .page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
+.social-medias, .team-list, .features-list, .page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.features-card__thumb, .form-send-out__button--primary, .nav-menu__button {
+.social-medias__link, .features-card__thumb, .form-send-out__button--primary, .nav-menu__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,4 +713,61 @@ summary {
 
 .team {
   background-color: #F5F4FA;
+}
+
+.team-card {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .team-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-card__footer {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.team-card__title {
+  margin-bottom: 10px;
+}
+
+.team-card__position {
+  margin-bottom: 16px;
+}
+
+.social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-medias__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-medias__link {
+  width: 44px;
+  height: 44px;
+  color: #AFB1B8;
+  border-radius: 50%;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-medias__link:hover, .social-medias__link:focus {
+  color: #ffffff;
+  background-color: #2196F3;
+}
+
+.social-medias__icon {
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
