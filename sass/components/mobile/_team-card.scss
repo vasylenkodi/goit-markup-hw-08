@@ -18,11 +18,13 @@
 
 .team-card__title {
     @extend %teamMemberNameFont;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
 .team-card__position {
     @extend %teamMemberPositionFont;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 

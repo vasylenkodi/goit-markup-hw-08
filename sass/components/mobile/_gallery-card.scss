@@ -1,0 +1,63 @@
+.gallery-card {
+    width: 100%;
+}
+
+.gallery-card:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.gallery-card__link {
+    @extend %link;
+}
+
+.gallery-card__body {
+    transition: box-shadow 250ms $timingFunction;
+
+    .gallery-card__link:hover &,
+    .gallery-card__link:focus & {
+        box-shadow: 0px 1px 1px getColor('tertiary-shadow-color'), 0px 4px 4px getColor('portfolio-card-secondary-shadow-color'),
+    1px 4px 6px getColor('portfolio-card-tertiary-shadow-color');
+    }
+}
+
+.gallery-card__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @extend %portfolioCardOverlayFont;
+    width: 100%;
+    height: 100%;
+    background-color: getColor('gallery-overlay-bg-color');
+    padding: 77px 24px;
+    transform: translateY(100%);
+
+    transition: transform 250ms $timingFunction;
+
+    .gallery-card__link:hover &, .gallery-card__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+.gallery-card__footer {
+    padding: 20px 24px;
+    border-right: 1px solid getColor('primary-border-color');
+    border-bottom: 1px solid getColor('primary-border-color');
+    border-left: 1px solid getColor('primary-border-color');
+}
+
+.gallery-card__title {
+    @extend %portfolioCardTitleFont;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.gallery-card__text {
+    @extend %portfolioCardTextFont;
+    margin: 0;
+}

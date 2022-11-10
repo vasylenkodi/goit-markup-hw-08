@@ -11,12 +11,16 @@
     width: 100%;
     height: 120px;
     background-color: getColor('tertiary-bg-color');
+    margin-bottom: 30px;
 }
 
 .features-card__title {
     @extend %secondaryTitleFont;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .features-card__text {
     @extend %primaryTextFont;
+    margin: 0;
 }
