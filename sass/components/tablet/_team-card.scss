@@ -1,0 +1,45 @@
+.team-card {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px)/2);
+    }
+}
+
+.team-card:nth-child(-n + 2) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+
+.team-card:nth-child(2n + 1) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 30px;
+    }
+}
+
+.team-card__footer {
+
+}
+
+.team-card__title {
+
+}
+
+.team-card__position {
+
+}
+
+.social-medias {
+
+}
+
+.social-medias__item:not(:last-child) {
+
+}
+
+.social-medias__link {
+
+}
+
+.social-medias__icon {
+
+}

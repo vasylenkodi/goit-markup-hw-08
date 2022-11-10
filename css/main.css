@@ -839,7 +839,7 @@ summary {
   background-color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .team-card:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1255,6 +1255,38 @@ summary {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-card:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-card:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-card:nth-child(2n+1) {
     margin-right: 30px;
   }
 }/*# sourceMappingURL=main.css.map */

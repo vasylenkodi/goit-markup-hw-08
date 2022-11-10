@@ -1,0 +1,17 @@
+.team {
+
+}
+
+.team__title {
+
+}
+
+.team-list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+}
