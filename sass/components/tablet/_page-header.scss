@@ -1,0 +1,21 @@
+.page-header__container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }
+} 
+
+.nav-menu {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+}
+
+.nav-menu__social-media-list {
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}

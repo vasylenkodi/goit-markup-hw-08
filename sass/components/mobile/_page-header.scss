@@ -1,10 +1,12 @@
 .page-header__container {
-    position: relative;
-    overflow: hidden;
+    @media screen and (max-width: 767px) {
+        position: relative;
+        overflow: hidden;
+    }
 } 
 
 .nav-menu {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -24,7 +26,7 @@
 }
 
 .nav-menu.is-open {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
         transform: translateX(0);
     }
 }

@@ -1,8 +1,7 @@
 .page-header-contacts {
     @extend %list;
-    display: flex;
-    margin-top: auto;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 767px) {
+        display: flex;
         flex-direction: column-reverse;
     }
 }
@@ -14,7 +13,7 @@
 .page-header-contacts__item:not(:first-child) {
     @extend %phoneNumberFont;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 32px;
     }
 }
@@ -25,13 +24,13 @@
 }
 
 .page-header-contacts__icon-mail {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
 
 .page-header-contacts__icon-phone {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }

@@ -1,0 +1,34 @@
+.page-header-contacts {
+
+}
+
+.page-header-contacts__item {
+    
+}
+
+.page-header-contacts__item:not(:first-child) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-top: 10px;
+    }
+}
+
+.page-header-contacts__link {
+    @media screen and (min-width: $tablet) {
+        transition: color 250ms $timingFunction;
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+    }
+}
+
+.page-header-contacts__icon-mail {
+    fill: currentColor;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.page-header-contacts__icon-phone {
+    fill: currentColor;
+    vertical-align: bottom;
+    margin-right: 8px;
+}
