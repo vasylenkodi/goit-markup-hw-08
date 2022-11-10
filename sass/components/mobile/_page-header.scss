@@ -1,3 +1,7 @@
+.page-header {
+    border: 1px solid getColor('header-border-color');
+}
+
 .page-header__container {
     @media screen and (max-width: 767px) {
         position: relative;

@@ -18,3 +18,23 @@
         padding-bottom: 32px;
     }
 }
+
+.site-navigation__link--current {
+    @media screen and (min-width: $tablet) {
+        position: relative;
+        color: getColor('accent-color');
+    }
+}
+
+.site-navigation__link--current::after {
+    @media screen and (min-width: $tablet) {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: getColor('accent-color');
+        border-radius: 2px; 
+    }
+}

@@ -3,7 +3,9 @@
 }
 
 .gallery-card:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
 }
 
 .gallery-card__link {
