@@ -1,5 +1,7 @@
 .social-medias-subscribe {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .social-medias-subscribe__title {

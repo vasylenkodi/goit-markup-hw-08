@@ -941,7 +941,11 @@ summary {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .page-footer {
+    text-align: center;
+  }
 }
 
 .logo-address {
@@ -961,8 +965,10 @@ summary {
   color: #2196F3;
 }
 
-.social-medias-subscribe {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .social-medias-subscribe {
+    margin-bottom: 60px;
+  }
 }
 
 .social-medias-subscribe__title {
@@ -1307,4 +1313,42 @@ summary {
 
 .clients__item:nth-child(-n+3) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.logo-address {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-medias-subscribe {
+    margin-left: 165px;
+  }
+}
+
+.social-medias-subscribe__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-send-out {
+    width: 450px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

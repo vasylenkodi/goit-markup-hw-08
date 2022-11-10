@@ -1,0 +1,13 @@
+.page-footer {
+
+}
+
+.page-footer__container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
