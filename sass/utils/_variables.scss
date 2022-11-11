@@ -279,11 +279,15 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: getColor('secondary-text-color');
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 
 %modalLabelFont {
@@ -306,11 +310,23 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
 
 %modalCommentPlaceholderFont {
     font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: getColor('modal-placeholder-color');  
+
+    @media screen and (min-width: $desktop) {
+        font-size: 12px;
+        
+    }
+}
+
+%modalCheckboxTextFont {
+    font-family: 'Roboto';
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.01em;
-
-    color: getColor('modal-placeholder-color');   
+    letter-spacing: 0.03em;
+    color: getColor('primary-text-color');
 }
 
 %portfolioCardTitleFont {

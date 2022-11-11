@@ -37,6 +37,7 @@
     height: 100%;
     background-color: getColor('gallery-overlay-bg-color');
     padding: 77px 24px;
+    margin: 0;
     transform: translateY(100%);
 
     transition: transform 250ms $timingFunction;

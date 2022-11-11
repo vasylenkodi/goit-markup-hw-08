@@ -1,0 +1,23 @@
+.gallery-card {
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 30px * 2)/3);
+    }
+}
+
+.gallery-card:not(:nth-child(3n)) {
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
+
+.gallery-card:not(:nth-child(n + 7)) {
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 30px;
+    }
+}
+
+.gallery-card__overlay {
+    @media screen and (min-width: $desktop) {
+        padding: 63px 24px;
+    }
+}

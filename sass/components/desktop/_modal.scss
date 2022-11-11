@@ -1,0 +1,6 @@
+.modal {
+    @media screen and (min-width: $tablet) {
+        width: 528px;
+        min-height: 581px;
+    }
+}

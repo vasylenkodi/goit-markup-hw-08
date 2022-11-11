@@ -44,6 +44,10 @@
 .form-send-out__button--primary {
     @extend .button--primary;
     @extend %centeredFlex;
+    @media screen and (max-width: 1199px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
     @media screen and (min-width: $desktop) {
         vertical-align: middle;
     }

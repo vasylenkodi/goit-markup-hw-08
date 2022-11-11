@@ -6,11 +6,15 @@
 }
 
 .gallery-card:nth-child(2n) {
-    margin-left: 30px;
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: 30px;
+    }
 }
 
 .gallery-card:not(:nth-child(n + 8)) {
-    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
 }
 
 .gallery-card__link {
