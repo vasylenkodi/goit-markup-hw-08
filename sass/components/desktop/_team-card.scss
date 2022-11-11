@@ -1,0 +1,41 @@
+.team-card {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px * 3)/4);
+    }
+}
+
+.team-card:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
+
+.team-card__footer {
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 30px;
+    }
+}
+
+.team-card__title {
+
+}
+
+.team-card__position {
+
+}
+
+.social-medias {
+
+}
+
+.social-medias__item:not(:last-child) {
+
+}
+
+.social-medias__link {
+
+}
+
+.social-medias__icon {
+
+}

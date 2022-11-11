@@ -605,6 +605,10 @@ summary {
   }
 }
 
+img {
+  display: block;
+}
+
 .logo {
   display: inline-block;
   padding-top: 16px;
@@ -1506,4 +1510,22 @@ summary {
   padding-top: 27px;
   padding-bottom: 27px;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-card__footer {
+    padding-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
