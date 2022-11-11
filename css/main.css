@@ -260,7 +260,7 @@ summary {
   color: #757575;
 }
 
-.clients__title, .team__title {
+.clients__title, .team__title, .services__title {
   font-family: "Roboto";
   font-size: 28px;
   line-height: 1.18;
@@ -269,7 +269,7 @@ summary {
   color: #212121;
 }
 @media screen and (min-width: 1200px) {
-  .clients__title, .team__title {
+  .clients__title, .team__title, .services__title {
     font-size: 36px;
     line-height: 1.17;
   }
@@ -290,7 +290,7 @@ summary {
   }
 }
 
-.form-send-out__title, .social-medias-subscribe__title {
+.services-card__title, .form-send-out__title, .social-medias-subscribe__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -524,7 +524,7 @@ summary {
   text-decoration: none;
 }
 
-.gallery, .buttons-list, .page-footer__social-medias-list, .address-list, .clients__list, .social-medias, .team-list, .features-list, .page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
+.services__list, .gallery, .buttons-list, .page-footer__social-medias-list, .address-list, .clients__list, .social-medias, .team-list, .features-list, .page-header-contacts, .site-navigation__list, .nav-menu__social-media-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -545,6 +545,10 @@ summary {
 .hero {
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.services__title {
+  text-align: center;
 }
 
 .visually-hidden {
@@ -1468,4 +1472,38 @@ summary {
   .features-card:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.services {
+  padding-top: 0;
+}
+
+.services__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-card {
+  position: relative;
+}
+
+.services-card__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
 }/*# sourceMappingURL=main.css.map */
