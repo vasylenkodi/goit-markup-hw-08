@@ -1449,4 +1449,23 @@ summary {
     padding-right: 237px;
     padding-left: 237px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-card {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-card:not(:last-child) {
+    margin-right: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.features-list {
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
+}
+
+.features-card {
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 30px * 3)/4);
+    }
+}
+
+.features-card:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
