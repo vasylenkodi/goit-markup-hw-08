@@ -1,0 +1,13 @@
+.hero {
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;    
+    }
+}
+
+.container--hero {
+    @media screen and (min-width: $desktop) {
+        padding-right: 237px;
+        padding-left: 237px;
+    }
+}
