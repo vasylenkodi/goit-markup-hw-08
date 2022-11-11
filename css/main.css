@@ -648,7 +648,6 @@ img {
 }
 
 .button--primary, .form-send-out__button--primary {
-  display: inline-block;
   padding: 10px 24px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -658,6 +657,12 @@ img {
 }
 .button--primary:hover, .form-send-out__button--primary:hover, .button--primary:focus, .form-send-out__button--primary:focus {
   background-color: #188CE8;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send-out__button--primary {
+    vertical-align: middle;
+  }
 }
 
 .button--secondary {
@@ -960,8 +965,10 @@ img {
   }
 }
 
-.logo-address {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .logo-address {
+    margin-bottom: 60px;
+  }
 }
 
 .address-list__item:not(:last-child) {
@@ -1027,20 +1034,33 @@ img {
   margin-bottom: 20px;
 }
 
-.form-send-out__label {
-  display: block;
+@media screen and (max-width: 1199px) {
+  .form-send-out__label {
+    display: block;
+  }
 }
 
 .form-send-out__input {
   padding: 15px 16px;
   width: 100%;
-  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
 }
+@media screen and (max-width: 1199px) {
+  .form-send-out__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-send-out__icon {
+    margin-left: 12px;
+  }
+}
+
 .buttons-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1345,8 +1365,10 @@ img {
   }
 }
 
-.logo-address {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .logo-address {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1516,7 +1538,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team-card {
     width: calc((100% - 90px) / 4);
   }
@@ -1549,4 +1571,62 @@ img {
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send-out {
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send-out__input-button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send-out__label {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send-out__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send-out__icon {
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

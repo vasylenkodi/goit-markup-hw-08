@@ -1,23 +1,5 @@
 .logo-address {
-    text-align: center;
-}
-
-.address-list {
-
-}
-
-.address-list__item:not(:last-child) {
-
-}
-
-.address-list__link {
-
-}
-
-.address-list__link--address {
-
-}
-
-.address-list__link--contacts {
-
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }

@@ -9,7 +9,9 @@
 }
 
 .form-send-out__label {
-    display: block;
+    @media screen and (max-width: 1199px) {
+        display: block;
+    }
 }
 
 .form-send-out__input {
@@ -17,7 +19,6 @@
 
     padding: 15px 16px;
     width: 100%;
-    margin-bottom: 20px;
     border: 1px solid getColor('send-out-input-border-color');
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px getColor('primary-shadow-color'));
@@ -25,5 +26,15 @@
 
     &::placeholder {
         @extend %page-footerInputPlaceholderFont;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.form-send-out__icon {
+    @media screen and (max-width: 1199px) {
+        margin-left: 12px;
     }
 }

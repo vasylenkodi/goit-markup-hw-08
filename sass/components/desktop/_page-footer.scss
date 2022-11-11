@@ -1,0 +1,6 @@
+.page-footer__container {
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

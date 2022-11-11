@@ -1,0 +1,32 @@
+.form-send-out {
+    @media screen and (min-width: $desktop) {
+        width: 570px;
+    }
+}
+
+.form-send-out__input-button-group {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.form-send-out__label {
+    @media screen and (min-width: $desktop) {
+        flex-grow: 1;
+        margin-right: 12px;
+    }
+}
+
+.form-send-out__input {
+    @media screen and (min-width: $desktop) {
+        width: 100%;
+    }
+}
+
+.form-send-out__icon {
+    @media screen and (min-width: $desktop) {
+        margin-left: 10px;
+    }
+} 
