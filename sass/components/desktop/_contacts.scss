@@ -1,0 +1,29 @@
+.page-header-contacts {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.page-header-contacts__item:not(:first-child) {
+    @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
+}
+
+.page-header-contacts__item:not(:first-child) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+}
+
+.page-header-contacts__icon-mail {
+    @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}
+
+.page-header-contacts__icon-phone {
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}

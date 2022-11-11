@@ -1,0 +1,5 @@
+.button--primary {
+    @media screen and (min-width: $desktop) {
+        padding: 10px 28px;
+    }
+}

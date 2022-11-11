@@ -1,7 +1,12 @@
+.site-navigation {
+    @media screen and (min-width: $tablet) {
+        margin-left: 87px;
+    }
+}
+
 .site-navigation__list {
     @media screen and (min-width: $tablet) {
         display: flex;
-        margin-left: 87px;
     }
 }
 
