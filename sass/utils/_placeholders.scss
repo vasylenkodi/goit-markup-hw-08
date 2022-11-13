@@ -14,11 +14,11 @@
     align-items: center;
 }
 
-%image {
-  display: block;
-  overflow: hidden;
-  max-width: 100%;
-}
+// %image {
+//   display: block;
+//   overflow: hidden;
+//   max-width: 100%;
+// }
 
 %backgroundImagePositioning {
   background-position: center;
@@ -81,4 +81,6 @@
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }

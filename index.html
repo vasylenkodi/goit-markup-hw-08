@@ -16,7 +16,7 @@
     <header class="page-header">
       <div class="container page-header__container">
         <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
-        <div class="nav-menu js-menu-container" mobileMenu>
+        <div class="nav-menu js-menu-container" id="mobile-menu" mobileMenu>
           <nav class="site-navigation">
           <ul class="site-navigation__list">
             <li class="site-navigation__item"><a href="./index.html" class="site-navigation__link site-navigation__link--current">Студія</a></li>
@@ -52,7 +52,8 @@
           </svg>
         </button>
         </div>
-        <button type="button" class="nav-menu__button js-open-menu" openMenuBtn>
+        <button type="button" class="nav-menu__button js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu" openMenuBtn>
           <svg class="page-header__burger-icon" width="24" height="16">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>

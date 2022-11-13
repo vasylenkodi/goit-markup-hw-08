@@ -4,24 +4,27 @@
     right: 0;
     width: 100%;
     height: 100%;
+    padding: 93px 15px;
     background-color: getColor('back-drop-color');
     opacity: 1;
     visibility: visible;
+    overflow-y: scroll;
     transition: opacity 250ms $timingFunction, visibility $timingFunction 250ms;
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    right: 50%;
+    position: relative;
     width: calc(100% - 30px);
     min-height: 609px;
-    transform: translate(50%, -50%) scale(1);
     background-color: getColor('primary-bg-color');
     box-shadow: 0px 1px 3px getColor('tertiary-shadow-color'), 0px 1px 1px getColor('secondary-team-card-shadow-color'), 0px 2px 1px getColor('tertiary-team-card-shadow-color');
     border-radius: 4px;
     padding: 40px;
     transition: transform 250ms $timingFunction;
+    @media screen and (max-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .modal__modal-close-button {

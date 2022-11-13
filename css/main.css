@@ -704,6 +704,8 @@ summary {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -812,8 +814,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 48px 40px;
     background-color: #FFFFFF;
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -904,6 +907,9 @@ img {
 
 .hero {
   background-color: #2F303A;
+  background-image: url("../../../images/hero-background-image.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: url("../../../images/hero-background-image.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-size: cover;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -1063,21 +1069,19 @@ img {
   right: 0;
   width: 100%;
   height: 100%;
+  padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  right: 50%;
+  position: relative;
   width: calc(100% - 30px);
   min-height: 609px;
-  -webkit-transform: translate(50%, -50%) scale(1);
-          transform: translate(50%, -50%) scale(1);
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1087,6 +1091,12 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .modal__modal-close-button {
@@ -1845,6 +1855,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .modal {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%) scale(1);
+            transform: translate(50%, -50%) scale(1);
     width: 528px;
     min-height: 581px;
   }

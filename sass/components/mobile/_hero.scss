@@ -1,14 +1,19 @@
 .hero {
-    background-color: getColor('secondary-bg-color');
-    // background-image: url('../../../images/hero-background-image.jpg'), linear-gradient(getColor('hero-bg-gradient-start-color'), getColor('hero-bg-gradient-end-color'));
-    @extend %backgroundImagePositioning;
-    text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
+  background-color: getColor('secondary-bg-color');
+  background-image: url('../../../images/hero-background-image.jpg'),
+    linear-gradient(
+      getColor('hero-bg-gradient-start-color'),
+      getColor('hero-bg-gradient-end-color')
+    );
+  @extend %backgroundImagePositioning;
+  background-size: cover;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .hero__title {
-    @extend %heroFont;
-    margin-top: 0;
-    margin-bottom: 30px;
+  @extend %heroFont;
+  margin-top: 0;
+  margin-bottom: 30px;
 }

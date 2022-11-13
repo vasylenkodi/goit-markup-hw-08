@@ -1,5 +1,9 @@
 .modal {
     @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(1);
         width: 528px;
         min-height: 581px;
     }
