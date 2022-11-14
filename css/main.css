@@ -802,6 +802,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    overflow-y: scroll;
     width: 100vw;
     height: 100vh;
     -webkit-transform: translateX(100%);
