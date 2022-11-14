@@ -3,7 +3,7 @@
     background-image: linear-gradient(
       getColor('hero-bg-gradient-start-color'),
       getColor('hero-bg-gradient-end-color')
-    ), url('../../../images/Hero-background-image-tablet.jpg');
+    ), url('../../../images/hero-background-image-tablet.jpg');
     max-width: 768px;
   }
 }
@@ -18,7 +18,7 @@
             background-image: linear-gradient(
             getColor('hero-bg-gradient-start-color'),
             getColor('hero-bg-gradient-end-color')
-            ), url('../../../images/Hero-background-image-tablet@2x.jpg');
+            ), url('../../../images/hero-background-image-tablet@2x.jpg');
         }
     }
 }
