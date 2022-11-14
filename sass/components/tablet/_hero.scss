@@ -1,3 +1,28 @@
+.hero {
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+      getColor('hero-bg-gradient-start-color'),
+      getColor('hero-bg-gradient-end-color')
+    ), url('../../../images/Hero-background-image-tablet.jpg');
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(
+            getColor('hero-bg-gradient-start-color'),
+            getColor('hero-bg-gradient-end-color')
+            ), url('../../../images/Hero-background-image-tablet@2x.jpg');
+        }
+    }
+}
+
 .container--hero {
     @media screen and (min-width: $tablet) {
         padding-right: 189px;

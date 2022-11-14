@@ -18,11 +18,17 @@
 }
 
 .gallery-card__link {
-
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        height: 100%;
+    }
 }
 
 .gallery-card__body {
-
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .gallery-card__thumb {
@@ -35,7 +41,9 @@
 }
 
 .gallery-card__footer {
-    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-grow: 1;
+    }
 }
 
 .gallery-card__title {
