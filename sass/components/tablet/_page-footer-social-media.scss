@@ -5,7 +5,9 @@
 }
 
 .social-medias-subscribe__title {
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .page-footer__social-medias-list {
