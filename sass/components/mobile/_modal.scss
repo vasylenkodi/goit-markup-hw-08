@@ -14,7 +14,8 @@
 
 .modal {
     position: relative;
-    width: calc(100% - 30px);
+    width: 100%;
+    max-width: 450px;
     min-height: 609px;
     background-color: getColor('primary-bg-color');
     box-shadow: 0px 1px 3px getColor('tertiary-shadow-color'), 0px 1px 1px getColor('secondary-team-card-shadow-color'), 0px 2px 1px getColor('tertiary-team-card-shadow-color');
