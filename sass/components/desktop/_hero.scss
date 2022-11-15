@@ -3,7 +3,7 @@
     background-image: linear-gradient(
       getColor('hero-bg-gradient-start-color'),
       getColor('hero-bg-gradient-end-color')
-    ), url('../../../images/hero-background-image-desktop.jpg');
+    ), url('../images/hero-background-image-desktop.jpg');
     max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
@@ -21,7 +21,7 @@
             background-image: linear-gradient(
             getColor('hero-bg-gradient-start-color'),
             getColor('hero-bg-gradient-end-color')
-            ), url('../../../images/hero-background-image-desktop@2x.jpg');
+            ), url('../images/hero-background-image-desktop@2x.jpg');
         }
     }
 }
